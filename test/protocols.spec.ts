@@ -3,7 +3,7 @@ import { expect } from 'aegir/chai'
 import { getProtocol } from '../src/protocols-table.js'
 
 describe('protocols', () => {
-  describe('throws on non existent protocol', () => {
+  describe('throws on nonexistent protocol', () => {
     it('number', () => {
       expect(
         () => getProtocol(1234)
