@@ -346,7 +346,7 @@
 
 ### Documentation
 
-* update reamde with correct global namespace name ([#292](https://github.com/multiformats/js-multiaddr/issues/292)) ([fe36328](https://github.com/multiformats/js-multiaddr/commit/fe36328d300105ac5fb06bbc027bc3676ee73e1c))
+* update readme with correct global namespace name ([#292](https://github.com/multiformats/js-multiaddr/issues/292)) ([fe36328](https://github.com/multiformats/js-multiaddr/commit/fe36328d300105ac5fb06bbc027bc3676ee73e1c))
 
 ## [11.0.11](https://github.com/multiformats/js-multiaddr/compare/v11.0.10...v11.0.11) (2022-12-08)
 
