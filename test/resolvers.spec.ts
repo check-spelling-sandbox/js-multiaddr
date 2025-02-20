@@ -125,7 +125,7 @@ describe('multiaddr resolve', () => {
         dns
       })
 
-      // Should only have one address with the same peer id and should ignore the bad record
+      // Should only have one address with the same peer ID and should ignore the bad record
       expect(resolvedMas).to.have.lengthOf(1)
       expect(resolvedMas[0].toString()).to.equal(stubs['_dnsaddr.am6.bootstrap.libp2p.io'][0].split('=').pop())
     })

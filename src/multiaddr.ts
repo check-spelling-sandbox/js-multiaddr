@@ -191,8 +191,8 @@ export class Multiaddr implements MultiaddrInterface {
           tuples.push([code, name])
         }
 
-        // if this is a p2p-circuit address, return the target peer id if present
-        // not the peer id of the relay
+        // if this is a p2p-circuit address, return the target peer ID if present
+        // not the peer ID of the relay
         if (code === names['p2p-circuit'].code) {
           tuples = []
         }
@@ -203,13 +203,13 @@ export class Multiaddr implements MultiaddrInterface {
       if (tuple?.[1] != null) {
         const peerIdStr = tuple[1]
 
-        // peer id is base58btc encoded string but not multibase encoded so add the `z`
+        // peer ID is base58btc encoded string but not multibase encoded so add the `z`
         // prefix so we can validate that it is correctly encoded
         if (peerIdStr[0] === 'Q' || peerIdStr[0] === '1') {
           return uint8ArrayToString(base58btc.decode(`z${peerIdStr}`), 'base58btc')
         }
 
-        // try to parse peer id as CID
+        // try to parse peer ID as CID
         return uint8ArrayToString(CID.parse(peerIdStr).multihash.bytes, 'base58btc')
       }
 
