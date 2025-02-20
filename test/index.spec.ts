@@ -742,7 +742,7 @@ describe('helpers', () => {
   })
 
   describe('.stringTuples', () => {
-    it('returns the string partss', () => {
+    it('returns the string parts', () => {
       expect(multiaddr('/ip4/0.0.0.0/utp').stringTuples())
         .to.eql([
           [4, '0.0.0.0'],
