@@ -204,7 +204,7 @@ export interface Multiaddr {
   toJSON(): string
 
   /**
-   * Returns Multiaddr as a convinient options object to be used with net.createConnection
+   * Returns Multiaddr as a convenient options object to be used with net.createConnection
    *
    * @example
    * ```js
